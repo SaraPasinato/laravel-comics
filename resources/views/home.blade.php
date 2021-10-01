@@ -32,7 +32,12 @@
           </div>
     </header>
     <main>
-
+        <!-- TODO >>creare un layout jumbotron -->
+        <section id='jumbotron'>
+            <div class="container-sm">
+                <p><a href="#" class="btn btn-primary-full">Current Series</a></p>
+            </div>
+        </section>
     </main>
     <script src="{{asset('js/app.js')}}"></script>
 </body>
