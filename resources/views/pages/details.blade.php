@@ -4,10 +4,15 @@
 @section('title','COMICS')
 {{-- contenuto jumbotron details--}}
 @section('content')
-{{-- TODO: inserire immagine primo obj in comics
+{{-- immagine primo obj in comics
  --}}
 <img src="{{$comics{0}['thumb']}}" alt="">
 
 @endsection
 
-{{--  contenuto main  --}}
+{{--  contenuto detail_gallery  --}}
+@section('section_content')
+ <div id="section-fill"></div>  
+ <section id="preview-section"></section>
+ <section id="details-section"></section>
+@endsection

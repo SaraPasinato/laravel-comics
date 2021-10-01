@@ -28,6 +28,7 @@ li a {
   background-color: #0282f9;
   color: #fff;
   border: 2px solid #0282f9;
+  padding: 10px 40px;
 }
 
 * {
@@ -117,7 +118,7 @@ header .list-nav li a:hover {
   margin-bottom: 50px;
 }
 #gallery .comics {
-  height: 400px;
+  height: 100%;
   padding: 80px 0 10px 0;
   color: #fff;
   display: flex;
@@ -144,4 +145,28 @@ header .list-nav li a:hover {
 #gallery .comics .card h6 {
   font-style: italic;
   font-weight: 200;
+}
+
+.controls {
+  height: 20vh;
+  text-align: center;
+  line-height: 20vh;
+}
+.controls .btn.btn-primary-full {
+  margin: 0 auto;
+}
+
+#section-fill {
+  height: 10vh;
+  background-color: #0282f9;
+}
+
+#preview-section {
+  height: 40vh;
+  background-color: #fff;
+}
+
+#details-section {
+  height: 40vh;
+  background-color: #f6f6f6;
 }

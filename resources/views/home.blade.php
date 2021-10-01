@@ -14,8 +14,6 @@
 <section id="gallery">
  <div class="comics">
     @foreach ($comics as $comic)
-        
-   
     <div class="card">
         <img src="{{$comic['thumb']}}" alt="">
         <h5>{{$comic['title']}}</h5>
@@ -23,6 +21,9 @@
      </div>
      @endforeach
  </div>
+ <div class="controls">
+    <p><a href="#" class="btn btn-primary-full"> Load more</a></p>
+  </div>
 </section>
 
 @endsection
