@@ -10,7 +10,19 @@
 @endsection
 
 {{-- contenuto main --}}
-@section('section-content')
-
+@section('section_content')
+<section id="gallery">
+ <div class="comics">
+    @foreach ($comics as $comic)
+        
+   
+    <div class="card">
+        <img src="{{$comic['thumb']}}" alt="">
+        <h5>{{$comic['title']}}</h5>
+        <h6> {{$comic['type']}}</h6>
+     </div>
+     @endforeach
+ </div>
+</section>
 
 @endsection

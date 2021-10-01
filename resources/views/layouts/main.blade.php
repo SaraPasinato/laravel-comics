@@ -19,7 +19,7 @@
         </section>
         {{-- TODO layout gallery  --}}
         <section>
-            @yield('section-content')
+            @yield('section_content')
         </section>
     </main>
     <script src="{{asset('js/app.js')}}"></script>
