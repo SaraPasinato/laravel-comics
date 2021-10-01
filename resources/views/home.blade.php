@@ -8,6 +8,7 @@
     <title>Main</title>
 </head>
 <body>
+    <!-- TODO>>creare un includes header -->
     <header>
         <div class="row container">
             <!-- logo + nav links -->
@@ -17,7 +18,7 @@
             <nav class="col">
               <ul class="list-nav">
                 <li><a href="#">Characters</a></li>
-                <li><a href="#">Comics</a></li>
+                <li><a href="{{route('details')}}">Comics</a></li>
                 <li><a href="#">movies</a></li>
                 <li><a href="#">tv</a></li>
                 <li><a href="#">games</a></li>
@@ -30,6 +31,9 @@
             </nav>
           </div>
     </header>
+    <main>
+
+    </main>
     <script src="{{asset('js/app.js')}}"></script>
 </body>
 </html>
