@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap);.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-sm {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+li {
+  list-style-type: none;
+}
+li a {
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #000;
+  font-family: "Noto Sans", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  background-color: #fff;
+  height: 20vh;
+}
+header .row {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
+  align-items: center;
+}
+header .col img {
+  max-width: 50%;
+}
+header .list-nav {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 5%;
+}
+header .list-nav li {
+  padding: 10px;
+}
+header .list-nav li a {
+  text-decoration: none;
+  padding: 0 15px 32px 15px;
+  color: #303030;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+header .list-nav li a:hover {
+  color: #0282f9;
+}
