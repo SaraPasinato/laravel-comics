@@ -17,7 +17,7 @@
                @yield('content')
             </div>
         </section>
-        {{-- TODO layout gallery  --}}
+        {{--  layout gallery  --}}
         <section>
             @yield('section_content')
         </section>
