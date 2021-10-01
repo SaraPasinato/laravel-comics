@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{asset("css/app.css")}}">
-    <title>Details</title>
-</head>
-<body>
-@include('includes.header')
-</body>
-</html>
+@extends('layouts.main')
+
+{{-- nome titolo --}}
+@section('title','COMICS')
+{{-- contenuto jumbotron details--}}
+@section('content')
+{{-- TODO: inserire immagine primo obj in comics
+ --}}
+ <img src="{{asset('images/adv.jpg')}}" alt="img_superman">
+@endsection
+
+{{--  contenuto main  --}}

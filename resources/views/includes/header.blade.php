@@ -6,7 +6,7 @@
         </div>
         <nav class="col">
           <ul class="list-nav">
-            <li><a href="#">Characters</a></li>
+            <li><a href="{{route('home')}}">Characters</a></li>
             <li><a href="{{route('details')}}">Comics</a></li>
             <li><a href="#">movies</a></li>
             <li><a href="#">tv</a></li>

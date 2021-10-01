@@ -99,3 +99,14 @@ header .list-nav li a:hover {
   font-size: 1.3em;
   padding: 10px 20px;
 }
+#jumbotron img {
+  max-width: 10%;
+  position: absolute;
+  bottom: -30px;
+  left: 325px;
+  z-index: 1;
+}
+#jumbotron #blue-section {
+  height: 10vh;
+  background-color: #0282f9;
+}
