@@ -6,7 +6,8 @@
 @section('content')
 {{-- TODO: inserire immagine primo obj in comics
  --}}
- <img src="{{asset('images/adv.jpg')}}" alt="img_superman">
+<img src="{{$comics{0}['thumb']}}" alt="">
+
 @endsection
 
 {{--  contenuto main  --}}
