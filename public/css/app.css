@@ -23,12 +23,22 @@ li a {
 .btn.btn-primary {
   color: #fff;
   border: 2px solid #0282f9;
+  padding: 10px;
 }
 .btn.btn-primary-full {
   background-color: #0282f9;
   color: #fff;
   border: 2px solid #0282f9;
   padding: 10px 40px;
+}
+.btn.btn-rounded {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #f6f6f6;
+}
+.btn.btn.btn-primary:hover {
+  background-color: #0282f9;
+  color: #000;
 }
 
 * {
@@ -383,4 +393,26 @@ header .list-nav li a:hover {
 }
 #logo-link #logo-link.col-6 {
   align-self: center;
+}
+
+#socials {
+  height: 10vh;
+  width: 100%;
+  background-color: #303030;
+}
+#socials .row {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#socials h3 {
+  color: #0282f9;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#items h3,
+#items a {
+  margin: 5px;
 }

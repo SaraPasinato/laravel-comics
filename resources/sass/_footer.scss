@@ -46,3 +46,26 @@
         align-self: center;
         }
 }
+
+#socials{
+    height: 10vh;
+    width: 100%;
+    background-color:$dark-secondary-color ;
+    .row{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    h3{
+        color: $prime-color;
+        text-transform: uppercase;
+        font-weight: bold;  
+    }
+}
+//!items in social section
+#items h3,
+#items a{
+    margin:5px;
+}
