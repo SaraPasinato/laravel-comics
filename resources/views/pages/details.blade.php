@@ -84,3 +84,8 @@
     </div>
  </section>
 @endsection
+
+{{-- secition links  --}}
+@section('section_links')
+    {{-- TODO >> --}}
+@endsection

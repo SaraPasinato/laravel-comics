@@ -27,6 +27,8 @@
             @yield('section_links')
         </div>
     </main>
+     {{--  creare un includes footer  --}}
+     @include('includes.footer')
     <script src="{{asset('js/app.js')}}"></script>
 </body>
 </html>
