@@ -27,3 +27,33 @@
 </section>
 
 @endsection
+
+@section('section_links')
+<nav id="site">
+    <div class="row container-sm">
+        <ul class="list-nav-center">
+            <li class="list-nav-li">
+                <img src="{{asset('/images/buy-comics-digital-comics.png')}}" alt="link-digital comics" >
+                <a href="">Digital comics</a>
+             </li>
+            <li class="list-nav-li">
+                <img src="{{asset('images/buy-comics-merchandise.png')}}" alt="merchandise" >
+                <a href="">Dc merchandise</a>
+             </li>
+            <li class="list-nav-li">
+                <img src="{{asset('images/buy-comics-subscriptions.png')}}" alt="" >
+                <a href="">subscription</a>
+             </li>
+            <li class="list-nav-li">
+                <img src="{{asset('images/buy-comics-shop-locator.png')}}" alt="shop-locator">
+                <a href="">Comics shop locator</a>
+             </li>
+            <li class="list-nav-li">
+                <img src="{{asset('/images/buy-dc-power-visa.svg')}}" alt="visa" >
+                <a href="">Dc power visa</a>
+             </li>
+          
+        </ul>
+    </div>
+</nav>
+@endsection

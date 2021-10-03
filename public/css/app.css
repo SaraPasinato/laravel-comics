@@ -47,6 +47,39 @@ img {
   max-width: 100%;
 }
 
+.py-4 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pe-2 {
+  padding-right: 1rem;
+}
+
+.opacity {
+  opacity: 0.5;
+}
+
+hr {
+  border-width: 0.1px;
+  color: #f6f6f6;
+  margin: 0.5rem 0.25rem;
+  width: 95%;
+}
+
+h3 {
+  text-transform: uppercase;
+  color: #0f4a6b;
+}
+
+p {
+  color: #7a7a7b;
+}
+
+a {
+  text-decoration: none;
+}
+
 header {
   background-color: #fff;
   height: 20vh;
@@ -162,11 +195,142 @@ header .list-nav li a:hover {
 }
 
 #preview-section {
-  height: 40vh;
+  height: 50vh;
   background-color: #fff;
+}
+#preview-section .row {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#preview-section .row .contents {
+  flex-basis: 60%;
+  align-items: center;
+}
+#preview-section .row .contents h3 {
+  text-align: center;
+}
+#preview-section .row .contents span {
+  margin: 1rem 0;
+  text-transform: capitalize;
+  font-weight: lighter;
+}
+#preview-section .row .contents .ctrls {
+  height: 50px;
+  background-color: #55ba59;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+#preview-section .row .contents .ctrls p {
+  margin: 1rem 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+#preview-section .row .contents .ctrls .price {
+  flex-basis: 70%;
+  height: 100%;
+  border: 1px solid #303030;
+  border-top: none;
+  border-left: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+#preview-section .row .contents .ctrls .disp {
+  flex-basis: 30%;
+  height: 100%;
+  border: 1px solid #303030;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: small;
+  text-align: center;
+  cursor: pointer;
+}
+#preview-section .row h4 {
+  text-transform: uppercase;
 }
 
 #details-section {
-  height: 40vh;
+  height: 50vh;
   background-color: #f6f6f6;
+}
+#details-section .row {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+#details-section .row .col-6 {
+  flex-basis: 50%;
+}
+#details-section .row #specs,
+#details-section .row #talent {
+  height: 30vh;
+  padding: 10px;
+}
+#details-section .row #specs h3,
+#details-section .row #talent h3 {
+  margin: 1rem 0;
+  text-transform: capitalize;
+}
+#details-section .row #specs .written,
+#details-section .row #specs .art,
+#details-section .row #talent .written,
+#details-section .row #talent .art {
+  display: flex;
+  height: 50px;
+  justify-content: flex-start;
+}
+#details-section .row #specs .sale,
+#details-section .row #specs .prices,
+#details-section .row #specs .series,
+#details-section .row #talent .sale,
+#details-section .row #talent .prices,
+#details-section .row #talent .series {
+  display: flex;
+  height: 20px;
+  justify-content: flex-start;
+}
+#details-section .row #specs .sale a,
+#details-section .row #specs .prices a,
+#details-section .row #specs .series a,
+#details-section .row #talent .sale a,
+#details-section .row #talent .prices a,
+#details-section .row #talent .series a {
+  text-transform: uppercase;
+}
+
+#site {
+  height: 20vh;
+  background: #0282f9;
+}
+#site .row {
+  height: 100%;
+}
+#site .row .list-nav-center {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-nav-li {
+  display: flex;
+  justify-content: center;
+  flex-basis: 20%;
+}
+.list-nav-li a {
+  padding: 0 20px;
+  align-self: center;
+  color: #fff;
+}
+.list-nav-li a:hover {
+  color: #fff;
+}
+.list-nav-li li:nth-child(4), .list-nav-li img {
+  max-width: 20%;
 }

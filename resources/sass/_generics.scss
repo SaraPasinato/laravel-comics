@@ -13,3 +13,36 @@
   img{
     max-width:100%;
   }
+
+  .py-4{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .pe-2{
+    padding-right: 1rem;
+   
+  }
+
+  .opacity{
+    opacity: 0.5;
+  }
+
+  hr{
+    border-width: .1px;
+    color: $light-gray;
+    margin: .50rem .25rem;
+    width: 95%;
+    
+  }
+  h3{
+    text-transform: uppercase;
+    color: $dark-blue;
+  }
+
+  p{
+    color: $gray-1;
+  }
+
+  a{
+    text-decoration: none; 
+  }
