@@ -40,9 +40,6 @@ li a {
   background-color: #0282f9;
   color: #000;
 }
-.btn .active {
-  color: red;
-}
 
 * {
   padding: 0;
@@ -98,7 +95,7 @@ a {
 }
 
 header {
-  background-color: #fff;
+  background: #fff;
   height: 20vh;
 }
 header .row {
