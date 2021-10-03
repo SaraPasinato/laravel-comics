@@ -40,6 +40,9 @@ li a {
   background-color: #0282f9;
   color: #000;
 }
+.btn .active {
+  color: red;
+}
 
 * {
   padding: 0;
@@ -127,6 +130,45 @@ header .list-nav li a {
 }
 header .list-nav li a:hover {
   color: #0282f9;
+  -webkit-animation: change 3s linear infinite alternate;
+          animation: change 3s linear infinite alternate;
+}
+header .list-nav li a.active {
+  color: #f00;
+}
+@-webkit-keyframes change {
+  0% {
+    color: #0282f9;
+  }
+  15% {
+    color: #8a2be2;
+  }
+  30% {
+    color: #f00;
+  }
+  45% {
+    color: #daa520;
+  }
+  75% {
+    color: #8a2be2;
+  }
+}
+@keyframes change {
+  0% {
+    color: #0282f9;
+  }
+  15% {
+    color: #8a2be2;
+  }
+  30% {
+    color: #f00;
+  }
+  45% {
+    color: #daa520;
+  }
+  75% {
+    color: #8a2be2;
+  }
 }
 
 #jumbotron {
@@ -177,8 +219,10 @@ header .list-nav li a:hover {
   flex-basis: 16.6666666667%;
   color: #fff;
   text-align: center;
-  margin: 0.6rem;
+  margin: 1rem;
   cursor: pointer;
+  box-shadow: 5px 3px 60px rgba(2, 130, 249, 0.3);
+  border-radius: 5px;
 }
 #gallery .comics .card img {
   flex-basis: 100%;
@@ -192,6 +236,7 @@ header .list-nav li a:hover {
 #gallery .comics .card h6 {
   font-style: italic;
   font-weight: 200;
+  margin: 10px;
 }
 
 .controls {
@@ -419,12 +464,14 @@ header .list-nav li a:hover {
 }
 
 #logo-link {
-  max-width: 40%;
+  max-width: 30%;
   height: 100%;
   background: url("../images/dc-logo-bg.png");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  -webkit-animation: rotate 3s linear infinite alternate;
+          animation: rotate 3s linear infinite alternate;
 }
 #logo-link #logo-link.col-6 {
   align-self: center;
@@ -450,4 +497,28 @@ header .list-nav li a:hover {
 #items h3,
 #items a {
   margin: 5px;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    rotate: 0deg;
+  }
+  50% {
+    rotate: 30deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    rotate: 0deg;
+  }
+  50% {
+    rotate: 30deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
 }

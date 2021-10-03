@@ -36,12 +36,13 @@
 }
 //!logo link
 #logo-link{
-    max-width:40%;
+    max-width:30%;
     height: 100%;
     background:url('../images/dc-logo-bg.png');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    animation: rotate 3s linear  infinite alternate;
         #logo-link.col-6{
         align-self: center;
         }
@@ -68,4 +69,16 @@
 #items h3,
 #items a{
     margin:5px;
+}
+
+@keyframes rotate {
+    0%{
+        rotate: 0deg;
+    }
+    50%{
+        rotate: 30deg;
+    }
+    100%{
+        rotate: 0deg;
+    }
 }
