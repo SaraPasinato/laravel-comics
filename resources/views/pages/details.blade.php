@@ -87,5 +87,27 @@
 
 {{-- secition links  --}}
 @section('section_links')
-    {{-- TODO >> --}}
+<nav id="secondary-site">
+    <ul class="row container-sm">
+          <li>
+              <h5>Digital Comics </h5>
+              <img src="{{asset('/images/buy-comics-digital-comics.png')}}" alt="link-digital comics" >
+          </li>
+          <li>
+            <h5>Digital Comics </h5>
+            <img src="{{asset('images/buy-comics-merchandise.png')}}" alt="merchandise" >
+          </li>
+          <li>
+            <h5>Digital Comics </h5>
+            <img src="{{asset('images/buy-comics-subscriptions.png')}}" alt="" >
+             
+          </li>
+          <li>
+            <h5>Digital Comics </h5>
+            <img src="{{asset('images/buy-comics-shop-locator.png')}}" alt="shop-locator">
+          
+          </li>
+    </ul>
+   
+</nav>
 @endsection
