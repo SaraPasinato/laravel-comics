@@ -64,7 +64,7 @@ header {
               }
             }
         }
-        li:hover .active{
+        li .active{
           
           border-bottom: 6px solid $prime-color;
           padding: 50% 0 55% 0;
