@@ -12,12 +12,14 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+//!Product >>list + show
+Route::get('/comics_list', function () {
+    return view('comics_list',['comics'=>config('comics')]);
+})->name('comics');
 
-Route::get('/', function () {
-    return view('home',['comics'=>config('comics')]);
-})->name('home');
 
+Route::get('/comic_show', function () {
+    $comic=config('comics')[0];
 
-Route::get('/details', function () {
-    return view('pages.details',['comics'=>config('comics')]);
-})->name('details');
+    return view('pages.comic_show',compact('comic'));
+})->name('comic_show');
