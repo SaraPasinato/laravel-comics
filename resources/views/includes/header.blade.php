@@ -6,6 +6,7 @@
         </div>
         <nav class="col">
           <ul class="list-nav">
+            {{-- TODO passare i link dinamicamente --}}
             <li><a href="#" class="{{ request()->routeIs('characters') ? 'active' :' '}}">Characters</a></li>
             <li><a href="{{route('comics')}}" class="{{ request()->routeIs('comics') ? 'active' :' '}}">Comics</a></li>
             <li><a href="#" class="{{ request()->routeIs('movies') ? 'active' :' '}}">movies</a></li>
