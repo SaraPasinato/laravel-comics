@@ -14,26 +14,33 @@ header {
     }
 
     .list-nav{
+        height: 100%;
+        width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        align-items: center;
         margin-left: 5%;
 
         li{
-            padding: 10px;
-            a{
+            display: block;
+           
+            a{ 
+                
                 text-decoration: none;
-                padding: 0 15px 32px 15px;
+               
+                margin: 0 20px;
+                
                 color: $dark-secondary-color;
   
                text-transform: uppercase;
                font-weight: bold;
                font-size: 0.9em;
             }
-            a:hover{
+            &:hover{
                color: $prime-color;
                animation: change 3s linear infinite alternate;
             }
-            a.active{
+            &:active{
               color: $bg-red;
               
             }
@@ -56,6 +63,11 @@ header {
                 color: $bg-violet;
               }
             }
+        }
+        li:hover .active{
+          
+          border-bottom: 6px solid $prime-color;
+          padding: 50% 0 55% 0;
         }
     }
   }

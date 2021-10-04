@@ -110,27 +110,30 @@ header .col img {
   max-width: 50%;
 }
 header .list-nav {
+  height: 100%;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   margin-left: 5%;
 }
 header .list-nav li {
-  padding: 10px;
+  display: block;
 }
 header .list-nav li a {
   text-decoration: none;
-  padding: 0 15px 32px 15px;
+  margin: 0 20px;
   color: #303030;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 0.9em;
 }
-header .list-nav li a:hover {
+header .list-nav li:hover {
   color: #0282f9;
   -webkit-animation: change 3s linear infinite alternate;
           animation: change 3s linear infinite alternate;
 }
-header .list-nav li a.active {
+header .list-nav li:active {
   color: #f00;
 }
 @-webkit-keyframes change {
@@ -166,6 +169,10 @@ header .list-nav li a.active {
   75% {
     color: #8a2be2;
   }
+}
+header .list-nav li:hover .active {
+  border-bottom: 6px solid #0282f9;
+  padding: 50% 0 55% 0;
 }
 
 #jumbotron {
