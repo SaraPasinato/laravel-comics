@@ -214,7 +214,7 @@ header .list-nav li a.active {
 }
 #gallery .comics .card {
   flex-basis: 16.6666666667%;
-  color: #fff;
+  height: 16.6666666667%;
   text-align: center;
   margin: 1rem;
   cursor: pointer;
@@ -222,8 +222,7 @@ header .list-nav li a.active {
   border-radius: 5px;
 }
 #gallery .comics .card img {
-  flex-basis: 100%;
-  transform: scale(1.4, 1);
+  transform: scale(1.3, 1);
   max-width: 75%;
 }
 #gallery .comics .card h5 {
@@ -234,6 +233,9 @@ header .list-nav li a.active {
   font-style: italic;
   font-weight: 200;
   margin: 10px;
+}
+#gallery .comics .card a {
+  color: #fff;
 }
 
 .controls {
@@ -307,6 +309,7 @@ header .list-nav li a.active {
 }
 #preview-section .row h4 {
   text-transform: uppercase;
+  text-align: right;
 }
 
 #details-section {
@@ -348,7 +351,9 @@ header .list-nav li a.active {
 #details-section .row #talent .prices,
 #details-section .row #talent .series {
   display: flex;
-  height: 20px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   justify-content: flex-start;
 }
 #details-section .row #specs .sale a,

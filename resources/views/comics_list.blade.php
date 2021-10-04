@@ -14,10 +14,12 @@
 <section id="gallery">
  <div class="comics">
     @foreach ($comics as $comic)
-    <div class="card">
-        <img src="{{$comic['thumb']}}" alt="">
-        <h5>{{$comic['title']}}</h5>
-        <h6> {{$comic['type']}}</h6>
+    <div class="card" >
+      <a href="{{ url("/comics_list/$loop->index") }}">  
+           <img src="{{$comic['thumb']}}" alt="">
+           <h5>{{$comic['title']}}</h5>
+           <h6> {{$comic['type']}}</h6>
+      </a>
      </div>
      @endforeach
  </div>

@@ -71,6 +71,7 @@
 
         h4{
             text-transform: uppercase;
+            text-align: right;
         }
     }
 }
@@ -108,7 +109,7 @@
          .prices,
          .series{
             display: flex;
-            height: 20px;
+            height: max-content;
             justify-content: flex-start ;
 
             a{

@@ -18,8 +18,9 @@ Route::get('/comics_list', function () {
 })->name('comics');
 
 
-Route::get('/comic_show', function () {
-    $comic=config('comics')[0];
+Route::get('/comics_list/{id}', function ($id) {
+   
+     $comic=config('comics')[$id];
 
-    return view('pages.comic_show',compact('comic'));
+    return view('pages.comic_show',compact('comic')); 
 })->name('comic_show');
